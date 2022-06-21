@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="138dp"
+                    android:layout_height="68dp"
+                    app:srcCompat="@drawable/ferrari_f40"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="204dp"
+                        android:layout_height="55dp"
+                        android:enabled="false"
+                        android:hint="Marca"
+                        android:textColorHint="@color/azul"
+                        app:startIconDrawable="@drawable/ic_car">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fila_txtMarca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marca"
+                            android:textColor="@color/azul" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="204dp"
+                        android:layout_height="55dp"
+                        android:enabled="false"
+                        android:hint="Color"
+                        android:textColorHint="@color/azul"
+                        app:startIconDrawable="@drawable/ic_color">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fila_txtColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Color"
+                            android:textColor="@color/azul" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="204dp"
+                        android:layout_height="55dp"
+                        android:enabled="false"
+                        android:hint="Serie"
+                        android:textColorHint="@color/azul"
+                        app:startIconDrawable="@drawable/ic_serie">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fila_txtSerie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Serie"
+                            android:textColor="@color/azul" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="204dp"
+                        android:layout_height="55dp"
+                        android:enabled="false"
+                        android:hint="Precio de venta"
+                        android:textColorHint="@color/azul"
+                        app:startIconDrawable="@drawable/ic_precio_venta">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fila_txtPrecioVenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Precio de venta"
+                            android:textColor="@color/azul" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="204dp"
+                        android:layout_height="55dp"
+                        android:enabled="false"
+                        android:hint="Año de fabricación"
+                        android:textColorHint="@color/azul"
+                        app:startIconDrawable="@drawable/ic_anio_fabricacion">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fila_txtAnioFabricacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15/12/1997"
+                            android:textColor="@color/azul" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/fila_btnEditar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit"/>
+                    <ImageButton
+                        android:id="@+id/fila_btnEliminar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

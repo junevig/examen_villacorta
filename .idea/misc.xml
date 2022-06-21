@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/drawable/ic_car.xml" value="0.3435" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/drawable/ic_delete.xml" value="0.3265" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/drawable/ic_edit.xml" value="0.3265" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/drawable/txt_il_disabled_color.xml" value="0.3115" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/layout/activity_listar_productos.xml" value="0.1" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/layout/activity_registrar_productos.xml" value="0.21" />
+        <entry key="..\:/AndroidDev/Proyectos/examen_villacorta/app/src/main/res/layout/fila_rv_producto.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
