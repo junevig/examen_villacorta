@@ -16,6 +16,7 @@ public class ProductoTB extends SQLiteOpenHelper {
                 "CREATE TABLE productos" +
                         "(id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "marca TEXT NOT NULL," +
+                        "color TEXT NOT NULL," +
                         "serie TEXT NOT NULL," +
                         "precio_venta FLOAT NOT NULL," +
                         "anio_fabricacion DATE NOT NULL);";

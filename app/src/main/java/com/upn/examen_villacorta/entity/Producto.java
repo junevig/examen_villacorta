@@ -5,10 +5,10 @@ public class Producto {
     private String marca;
     private String color;
     private String serie;
-    private double precio_venta;
+    private float precio_venta;
     private String anio_fabricacion;
 
-    public Producto(int id, String marca, String color, String serie, double precio_venta, String anio_fabricacion) {
+    public Producto(int id, String marca, String color, String serie, float precio_venta, String anio_fabricacion) {
         this.id = id;
         this.marca = marca;
         this.color = color;
@@ -17,7 +17,7 @@ public class Producto {
         this.anio_fabricacion = anio_fabricacion;
     }
 
-    public Producto(String marca, String color, String serie, double precio_venta, String anio_fabricacion) {
+    public Producto(String marca, String color, String serie, float precio_venta, String anio_fabricacion) {
         this.marca = marca;
         this.color = color;
         this.serie = serie;
@@ -57,11 +57,11 @@ public class Producto {
         this.serie = serie;
     }
 
-    public double getPrecio_venta() {
+    public float getPrecio_venta() {
         return precio_venta;
     }
 
-    public void setPrecio_venta(double precio_venta) {
+    public void setPrecio_venta(float precio_venta) {
         this.precio_venta = precio_venta;
     }
 

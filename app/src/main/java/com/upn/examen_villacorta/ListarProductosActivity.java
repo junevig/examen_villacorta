@@ -1,6 +1,7 @@
 package com.upn.examen_villacorta;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -26,12 +27,7 @@ public class ListarProductosActivity extends AppCompatActivity {
 
         rvProductos = findViewById(R.id.rvProductos);
         fl_btnRegistrarProducto = findViewById(R.id.fl_btnRegistrarProducto);
-        fl_btnRegistrarProducto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ListarProductosActivity.this, RegistrarProductosActivity.class));
-            }
-        });
+        fl_btnRegistrarProducto.setOnClickListener(v -> startActivity(new Intent(ListarProductosActivity.this, RegistrarProductosActivity.class)));
 
         mostrarProductos();
     }
@@ -43,6 +39,9 @@ public class ListarProductosActivity extends AppCompatActivity {
         productoDAO.abrirBD();
         listaProductos = productoDAO.listarProductos();
 
+        AdaptadorProductos adaptador = new AdaptadorProductos(ListarProductosActivity.this, listaProductos);
 
+        rvProductos.setAdapter(adaptador);
+        rvProductos.setLayoutManager(new LinearLayoutManager(ListarProductosActivity.this));
     }
 }

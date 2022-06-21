@@ -61,7 +61,7 @@ public class ProductoDAO {
                         c.getString(1),
                         c.getString(2),
                         c.getString(3),
-                        c.getDouble(4),
+                        c.getFloat(4),
                         c.getString(5)));
             }
         } catch (Exception e){
