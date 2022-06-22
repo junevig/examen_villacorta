@@ -130,6 +130,7 @@
         android:paddingHorizontal="20dp"
         android:layout_marginVertical="5dp">
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/r_p_txtiAnioFabricacion"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -137,7 +138,8 @@
             app:helperText="Obligatorio*"
             app:helperTextTextColor="#ED1414"
             app:startIconDrawable="@drawable/ic_anio_fabricacion"
-            app:endIconMode="clear_text">
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_anio_fabricacion">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/r_p_txtAnioFabricacion"
